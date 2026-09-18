@@ -2,7 +2,7 @@
 
 ### Deep Learning-Based Aortic Annulus Plane Detection from 3D Cardiac CT for TAVI Planning
 
-![AortaPlane end-to-end pipeline: CT input, 3D ResNet-CBAM training, direct 6-DoF regression, and conformal QC](pics/aortaplane-ct-training-pipeline.gif)
+![AortaPlane end-to-end pipeline: CT input, 3D ResNet-CBAM training, direct 6-DoF regression, and conformal QC](aortaplane-ct-training-pipeline.gif)
 
 ---
 

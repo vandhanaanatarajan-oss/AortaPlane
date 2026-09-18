@@ -1,0 +1,44 @@
+{
+  "M1_unet": {
+    "angle_error_mean": 20.77591552734375,
+    "angle_error_std": 4.110600193315532,
+    "centre_error_mean": 8.538298892974854,
+    "centre_error_std": 4.032787385651774,
+    "n_test_cases": 5
+  },
+  "M1_densenet3d": {
+    "angle_error_mean": 17.91707706451416,
+    "angle_error_std": 10.529042030564165,
+    "centre_error_mean": 5.560132884979248,
+    "centre_error_std": 2.3998512981092066,
+    "n_test_cases": 5
+  },
+  "M1_nnlandmark": {
+    "angle_error_mean": 16.549705505371094,
+    "angle_error_std": 8.088283520722905,
+    "centre_error_mean": 5.131671380996704,
+    "centre_error_std": 3.7605739399785847,
+    "n_test_cases": 5
+  },
+  "M2_resnet3d_noskip": {
+    "angle_error_mean": 24.95127468109131,
+    "angle_error_std": 15.386488058294473,
+    "centre_error_mean": 4.7642507314682,
+    "centre_error_std": 4.865540271275801,
+    "n_test_cases": 5
+  },
+  "M2_densenet3d": {
+    "angle_error_mean": 24.278119468688963,
+    "angle_error_std": 7.027342863556805,
+    "centre_error_mean": 7.912696456909179,
+    "centre_error_std": 2.186249055706594,
+    "n_test_cases": 5
+  },
+  "M2_nnlandmark": {
+    "angle_error_mean": 20.425281524658203,
+    "angle_error_std": 13.223272210035669,
+    "centre_error_mean": 4.589363801479339,
+    "centre_error_std": 4.482955951274193,
+    "n_test_cases": 5
+  }
+}

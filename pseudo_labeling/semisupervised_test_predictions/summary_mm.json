@@ -1,0 +1,30 @@
+{
+    "MRE_micro": 3.0129,
+    "std_micro": 1.08869,
+    "std_macro_class": 0.04888,
+    "SRD_2mm": 0.33333,
+    "SRD_3mm": 0.5,
+    "SRD_4mm": 0.66667,
+    "MRE_by_class": {
+        "annulus_1": 3.01591,
+        "annulus_2": 3.07121,
+        "annulus_3": 2.95158
+    },
+    "std_by_class": {
+        "annulus_1": 1.16917,
+        "annulus_2": 0.75537,
+        "annulus_3": 1.26926
+    },
+    "detailed_results": {
+        "CONTCT_R_08_FBA": {
+            "annulus_1": 1.84674,
+            "annulus_2": 3.82658,
+            "annulus_3": 1.68232
+        },
+        "CONTCT_R_27_FBA_no_extended_seg": {
+            "annulus_1": 4.18508,
+            "annulus_2": 2.31584,
+            "annulus_3": 4.22084
+        }
+    }
+}

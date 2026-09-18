@@ -1,0 +1,27 @@
+{
+    "MRE_micro": 3.92582,
+    "std_micro": 1.38611,
+    "std_macro_class": 0.09771,
+    "MRE_by_class": {
+        "annulus_1": 3.91733,
+        "annulus_2": 4.04951,
+        "annulus_3": 3.81062
+    },
+    "std_by_class": {
+        "annulus_1": 1.46784,
+        "annulus_2": 1.04951,
+        "annulus_3": 1.57455
+    },
+    "detailed_results": {
+        "CONTCT_R_08_FBA": {
+            "annulus_1": 2.44949,
+            "annulus_2": 5.09902,
+            "annulus_3": 2.23607
+        },
+        "CONTCT_R_27_FBA_no_extended_seg": {
+            "annulus_1": 5.38516,
+            "annulus_2": 3.0,
+            "annulus_3": 5.38516
+        }
+    }
+}

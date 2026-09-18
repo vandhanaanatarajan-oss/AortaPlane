@@ -1,0 +1,14 @@
+{
+    "channel_names": {
+        "0": "CT"
+    },
+    "labels": {
+        "background": 0,
+        "annulus_1": 1,
+        "annulus_2": 2,
+        "annulus_3": 3
+    },
+    "numTraining": 18,
+    "file_ending": ".nii.gz",
+    "name": "Dataset741_AnnulusCT"
+}

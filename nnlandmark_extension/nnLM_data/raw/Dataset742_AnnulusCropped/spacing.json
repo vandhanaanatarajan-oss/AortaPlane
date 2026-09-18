@@ -1,0 +1,186 @@
+{
+  "CONTCT_R_08_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_09_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_10_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_11_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_12_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_13_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_14_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_15_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_16_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_17_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_18_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_19_FBA": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_20_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_22_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_24_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_25_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_26_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_27_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_28_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "CONTCT_R_29_FBA_no_extended_seg": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "D8": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "K10": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  },
+  "R10": {
+    "image_spacing": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "annotation_spacing": null
+  }
+}

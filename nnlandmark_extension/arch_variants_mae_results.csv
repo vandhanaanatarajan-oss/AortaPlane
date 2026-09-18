@@ -1,0 +1,7 @@
+run_name,n,angle_mean,angle_std,centre_mean,centre_std,mae_mean,mae_std
+M1_unet_fold0,4,14.439,5.963,12.022,0.928,6.357,0.616
+M1_densenet3d_fold0,4,11.955,7.927,4.938,2.109,2.802,1.24
+M1_nnlandmark_fold0,4,11.617,6.666,4.369,0.285,2.071,0.23
+M2_densenet3d_fold0,4,14.534,5.764,12.008,1.831,5.691,1.855
+M2_resnet3d_noskip_fold0,4,13.214,6.261,2.306,0.399,1.305,0.213
+M2_nnlandmark_fold0,4,11.463,3.913,2.569,0.943,1.449,0.536

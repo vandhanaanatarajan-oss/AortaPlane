@@ -1,0 +1,122 @@
+[
+  {
+    "train": [
+      "CONTCT_R_09_FBA",
+      "CONTCT_R_10_FBA",
+      "CONTCT_R_11_FBA",
+      "CONTCT_R_12_FBA",
+      "CONTCT_R_13_FBA",
+      "CONTCT_R_17_FBA",
+      "CONTCT_R_18_FBA",
+      "CONTCT_R_19_FBA",
+      "CONTCT_R_20_FBA_no_extended_seg",
+      "CONTCT_R_22_FBA_no_extended_seg",
+      "CONTCT_R_25_FBA_no_extended_seg",
+      "CONTCT_R_26_FBA_no_extended_seg",
+      "CONTCT_R_28_FBA_no_extended_seg",
+      "CONTCT_R_29_FBA_no_extended_seg"
+    ],
+    "val": [
+      "CONTCT_R_15_FBA",
+      "CONTCT_R_16_FBA",
+      "CONTCT_R_24_FBA_no_extended_seg",
+      "CONTCT_R_14_FBA"
+    ]
+  },
+  {
+    "train": [
+      "CONTCT_R_09_FBA",
+      "CONTCT_R_10_FBA",
+      "CONTCT_R_12_FBA",
+      "CONTCT_R_14_FBA",
+      "CONTCT_R_15_FBA",
+      "CONTCT_R_16_FBA",
+      "CONTCT_R_17_FBA",
+      "CONTCT_R_19_FBA",
+      "CONTCT_R_20_FBA_no_extended_seg",
+      "CONTCT_R_24_FBA_no_extended_seg",
+      "CONTCT_R_25_FBA_no_extended_seg",
+      "CONTCT_R_26_FBA_no_extended_seg",
+      "CONTCT_R_28_FBA_no_extended_seg",
+      "CONTCT_R_29_FBA_no_extended_seg"
+    ],
+    "val": [
+      "CONTCT_R_22_FBA_no_extended_seg",
+      "CONTCT_R_13_FBA",
+      "CONTCT_R_11_FBA",
+      "CONTCT_R_18_FBA"
+    ]
+  },
+  {
+    "train": [
+      "CONTCT_R_09_FBA",
+      "CONTCT_R_11_FBA",
+      "CONTCT_R_12_FBA",
+      "CONTCT_R_13_FBA",
+      "CONTCT_R_14_FBA",
+      "CONTCT_R_15_FBA",
+      "CONTCT_R_16_FBA",
+      "CONTCT_R_18_FBA",
+      "CONTCT_R_19_FBA",
+      "CONTCT_R_20_FBA_no_extended_seg",
+      "CONTCT_R_22_FBA_no_extended_seg",
+      "CONTCT_R_24_FBA_no_extended_seg",
+      "CONTCT_R_28_FBA_no_extended_seg",
+      "CONTCT_R_29_FBA_no_extended_seg"
+    ],
+    "val": [
+      "CONTCT_R_26_FBA_no_extended_seg",
+      "CONTCT_R_10_FBA",
+      "CONTCT_R_25_FBA_no_extended_seg",
+      "CONTCT_R_17_FBA"
+    ]
+  },
+  {
+    "train": [
+      "CONTCT_R_10_FBA",
+      "CONTCT_R_11_FBA",
+      "CONTCT_R_13_FBA",
+      "CONTCT_R_14_FBA",
+      "CONTCT_R_15_FBA",
+      "CONTCT_R_16_FBA",
+      "CONTCT_R_17_FBA",
+      "CONTCT_R_18_FBA",
+      "CONTCT_R_19_FBA",
+      "CONTCT_R_20_FBA_no_extended_seg",
+      "CONTCT_R_22_FBA_no_extended_seg",
+      "CONTCT_R_24_FBA_no_extended_seg",
+      "CONTCT_R_25_FBA_no_extended_seg",
+      "CONTCT_R_26_FBA_no_extended_seg",
+      "CONTCT_R_29_FBA_no_extended_seg"
+    ],
+    "val": [
+      "CONTCT_R_09_FBA",
+      "CONTCT_R_28_FBA_no_extended_seg",
+      "CONTCT_R_12_FBA"
+    ]
+  },
+  {
+    "train": [
+      "CONTCT_R_09_FBA",
+      "CONTCT_R_10_FBA",
+      "CONTCT_R_11_FBA",
+      "CONTCT_R_12_FBA",
+      "CONTCT_R_13_FBA",
+      "CONTCT_R_14_FBA",
+      "CONTCT_R_15_FBA",
+      "CONTCT_R_16_FBA",
+      "CONTCT_R_17_FBA",
+      "CONTCT_R_18_FBA",
+      "CONTCT_R_22_FBA_no_extended_seg",
+      "CONTCT_R_24_FBA_no_extended_seg",
+      "CONTCT_R_25_FBA_no_extended_seg",
+      "CONTCT_R_26_FBA_no_extended_seg",
+      "CONTCT_R_28_FBA_no_extended_seg"
+    ],
+    "val": [
+      "CONTCT_R_29_FBA_no_extended_seg",
+      "CONTCT_R_20_FBA_no_extended_seg",
+      "CONTCT_R_19_FBA"
+    ]
+  }
+]

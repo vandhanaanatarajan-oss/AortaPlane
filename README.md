@@ -19,6 +19,9 @@ compares two deep-learning approaches to automating annulus plane detection:
   right/non/left coronary cusps (RC/NC/LC), with the plane derived
   geometrically from the predicted landmarks.
 
+  <img width="675" height="616" alt="aortaplane-3d-annulus-root-ezgif com-crop" src="https://github.com/user-attachments/assets/91fbf46e-67e8-4726-84cc-bec244327579" />
+
+
 Both models are evaluated with 5-fold cross-validation on a 42-patient,
 four-cohort dataset (Dongyang / KiTS / Rider / CONTCT\_R) with 5 patients held
 out as a locked test set, and are additionally benchmarked against a

@@ -202,15 +202,9 @@ than project deliverable code.
 
 ---
 
-## Explore the project
-
-[Research paper (PDF)](docs/AortaPlane_Dissertation.pdf) · [Code usage and setup](#usage) · [Project structure](#directory-structure) · [Data availability](#data-availability)
-
-Patient data, annotations, nnLandmark-variant checkpoints, and the third-party nnU-Net/nnLandmark library are not included.
-
 ## Citation
 
-If you use AortaPlane in your research, please cite our [paper](docs/AortaPlane_Dissertation.pdf):
+If you use AortaPlane in your research, please cite our [paper](docs/AortaPlane.pdf):
 
 ```
 @mastersthesis{natarajanchitra_aortaplane,

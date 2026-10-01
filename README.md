@@ -204,7 +204,7 @@ than project deliverable code.
 
 ## Citation
 
-If you use AortaPlane in your research, please cite our [paper](docs/AortaPlane.pdf):
+If you use AortaPlane in your research, please cite our [paper](Docs/AortaPlane.pdf):
 
 ```
 @mastersthesis{natarajanchitra_aortaplane,

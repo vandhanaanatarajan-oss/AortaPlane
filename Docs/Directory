@@ -1,0 +1,133 @@
+## Directory structure
+
+```
+src/                        Core model, dataset, and loss definitions
+    model.py                  Native AortaPlane (AnnulusPlaneNet) and
+                               Baseline (AnnulusLandmarkNet) architectures
+    dataset.py                 Dataset loading / preprocessing
+    loss.py                    PlaneLoss, LandmarkPlaneLoss, error metrics
+    coordconv3d.py              CoordConv3D extension (Section III-C)
+
+train_m1_variants.py          Trains AortaPlane and its architecture variants
+train_m2_variants.py          Trains Baseline and its architecture variants
+m1_unet.py, m2_resnet3d_noskip.py,
+m2_densenet3d.py, densenet3d_encoder.py
+                               Architecture-variant model definitions (root)
+
+arch_variants/                 Remaining architecture-variant model definitions
+    m1_densenet3d.py
+    m1_nnlandmark.py            AortaPlane + nnLandmark-encoder transplant
+    m2_nnlandmark.py            Baseline + nnLandmark-encoder transplant
+
+evaluation/
+    eval_cv.py                    5-fold CV evaluation (native models)
+    compute_full_grid_5fold_true_test.py
+                                    Full 8-row architecture-grid evaluation
+                                    on the true n=5 held-out test set
+    compute_variant_flops.py       FLOPs/parameter profiling for all 8
+                                    architecture-grid rows (see note below
+                                    on nnLandmark-row parameter accounting)
+    compute_nnlandmark_native_flops.py
+                                    FLOPs profiling for nnLandmark's own
+                                    standalone backbone (KNOWN ISSUE — see
+                                    "Known issues" below; do not treat its
+                                    output as final)
+    [gating sweep / disagreement-correlation / MAE scripts]
+
+nnlandmark_comparison/          Separate codebase adapting MIC-DKFZ's
+                                 nnU-Net-derived nnLandmark framework for
+                                 direct comparison against AortaPlane/Baseline
+    convert_annulus.py             Converts project data into nnLandmark's
+                                    expected dataset format
+    semi_supervised_iterative.py   Iterative pseudo-labelling experiment
+                                    (reported as a negative result)
+    build_matched_splits.py        Builds nnLandmark's cross-validation splits
+                                    to exactly match the main project's own
+                                    fold_config.json assignments
+    arch_variants/                  nnLandmark-transplant model definitions
+                                    (mirrors root arch_variants/ above)
+    training/nnUNetTrainer/variants/finetune_strategies.py
+                                    The three fine-tuning-strategy trainer
+                                    subclasses developed for this project
+                                    (nnLandmark_FrozenEncoder,
+                                    nnLandmark_PartialUnfreeze,
+                                    nnLandmark_DifferentialLR), each
+                                    registered with nnU-Net's own CLI via its
+                                    `-tr <ClassName>` flag. This is a small,
+                                    self-contained file extracted from a much
+                                    larger third-party nnU-Net/nnLandmark
+                                    installation — see "Third-party code not
+                                    included" below.
+
+fold_config.json                5-fold CV patient split definition (37
+                                 train/val patients + 5 held-out test patients)
+dataset_manifest.csv            Patient/cohort manifest
+
+results/                        Small result artefacts (CSV/JSON summaries,
+                                 aggregate tables). No per-patient identifiable
+                                 imaging data is included here.
+    all_sample_predictions.csv     Detailed per-sample predictions for every
+                                    patient in both the 5-fold CV set (n=37)
+                                    and the held-out test set (n=5), across
+                                    all three native-encoder models (M1
+                                    AortaPlane, M2 Baseline, CoordConv).
+                                    Columns: patient_id, cohort, split
+                                    (cv/test), fold (0-4 for CV; ensembled
+                                    or 0-4 for test), model, predicted and
+                                    ground-truth centre (D/H/W, voxel-mm),
+                                    centre_error_mm, predicted and
+                                    ground-truth normal (D/H/W, unit vector),
+                                    and angular_error_deg. For the test split,
+                                    fold="ensembled" gives the final reported
+                                    prediction (mean across the 5 fold
+                                    checkpoints, matching Table II's bottom
+                                    block); fold=0-4 gives the individual
+                                    pre-ensemble checkpoint predictions.
+                                    Built by consolidate_predictions.py
+                                    (project root) from cv_results.csv,
+                                    ensembled_test_predictions.csv, and
+                                    per_fold_predictions.csv; sanity-checked
+                                    against Table II before packaging.
+
+checkpoints/                    Trained model weights for the two native
+                                 models only (variant/nnLandmark-transplant
+                                 checkpoints are not included — several are
+                                 far larger, e.g. ~88M-parameter nnLandmark
+                                 rows, and would not fit a reasonable
+                                 submission size)
+    M1_fold0_best_weights_only.pth  Native AortaPlane, fold 0. Stripped of
+                                    optimizer/scheduler state (only needed to
+                                    resume training) — reduces this file from
+                                    ~42MB to ~14MB.
+    M2_fold0_best.pth               Native Baseline, fold 0. Included as-is —
+                                    already saved without optimizer state
+                                    (~23MB).
+
+slurm_scripts/                  Launch scripts for the SLURM job scheduler on
+                                 QMUL's Apocrita HPC, showing the exact
+                                 commands/arguments used for each reported
+                                 result. Only scripts confirmed to produce a
+                                 result reported in the dissertation are
+                                 included — see "SLURM scripts not included"
+                                 below for what was excluded and why.
+
+logs/
+    native/                       stdout/stderr from the native AortaPlane and
+                                   Baseline fold-0 training runs
+    nnlandmark_finetuning/        stdout/stderr from the three fine-tuning-
+                                   strategy runs (FrozenEncoder,
+                                   PartialUnfreeze, DifferentialLR), including
+                                   their per-fold continuation runs
+
+environment/
+    requirements_main.txt          Full pip freeze from the main project venv
+    requirements_nnlandmark.txt    Full pip freeze from the nnLandmark
+                                    comparison venv (includes torch, the
+                                    dynamic_network_architectures package,
+                                    and the editable nnLandmark install)
+
+docs/
+    AortaPlane_Dissertation.pdf    Research paper / dissertation
+```
+
+---

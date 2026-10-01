@@ -1,0 +1,12 @@
+## Usage
+
+An executable build is not provided, for two reasons:
+
+1. **Hardware/scheduler dependency.** Training and full-volume inference
+   require a CUDA GPU and were run via SLURM job arrays on QMUL's Apocrita HPC
+   cluster (5-fold cross-validation across 8+ model configurations, each
+   requiring several GPU-hours). This cannot be packaged as a standalone
+   executable that would run on examiner hardware.
+2. **Data dependency.** The code requires the source CT volumes, segmentation
+   masks, and landmark annotation files as input (see "Data availability"
+   above), which are not included in this submission.

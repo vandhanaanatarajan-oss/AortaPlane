@@ -101,41 +101,6 @@ Threshold sweep (n = 37; thresholds selected and evaluated on the same set, so d
 
 ---
 
-## Environment setup
-
-Two separate environments were used and are needed to reproduce different
-parts of the project. Package versions for both are pinned exactly in
-`environment/requirements_main.txt` and `environment/requirements_nnlandmark.txt`.
-
-**Main project environment** (`src/`, `train_m*_variants.py`, `arch_variants/`,
-evaluation scripts):
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r environment/requirements_main.txt
-```
-
-**nnLandmark comparison environment** (`nnlandmark_comparison/`):
-
-```bash
-module unload miniforge
-module load python/3.12.1-gcc-12.2.0
-module load cuda/12.6.2-gcc-12.2.0
-python3 -m venv nnlm_venv          # create inside nnlandmark_comparison/
-source nnlm_venv/bin/activate
-pip install -r environment/requirements_nnlandmark.txt
-pip install -e nnlandmark_comparison/nnLandmark  # editable install of the
-                                                    # nnU-Net-derived package
-```
-
-This part of the project was run under Python 3.12.1 with CUDA 12.6.2 on
-QMUL's Apocrita HPC cluster, with the module-load sequence above required
-before activating the venv (Apocrita's module system, not a general
-requirement of the code itself). GPU access via SLURM is effectively
-required for any of the 3D volume training to run in reasonable time.
-
----
 
 ## Data availability
 

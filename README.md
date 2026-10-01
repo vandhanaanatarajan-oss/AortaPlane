@@ -8,7 +8,10 @@ Author: Vandhanaa Natarajan Chitra, Emil Gasimov, Laura Bevis, Fuyu Cheng, Elisa
 
 ![AortaPlane end-to-end pipeline: CT input, 3D ResNet-CBAM training, direct 6-DoF regression, and conformal QC](aortaplane-ct-training-pipeline.gif)
 
-[![Research paper PDF](https://img.shields.io/badge/Research_paper-PDF-b31b1b)](docs/AortaPlane_Dissertation.pdf) [![Code usage guide](https://img.shields.io/badge/Code_usage-guide-2b6cb0)](#usage) [![Project structure](https://img.shields.io/badge/Project_structure-tree-2b6cb0)](#directory-structure) [![Dataset availability and access](https://img.shields.io/badge/Dataset-availability-2f855a)](#data-availability)
+[![Research paper PDF](https://img.shields.io/badge/Research_paper-PDF-b31b1b)](Docs/AortaPlane.pdf)
+[![Code usage guide](https://img.shields.io/badge/Code_usage-guide-2b6cb0)](Docs/Usage%20and%20Setup)
+[![Project structure](https://img.shields.io/badge/Project_structure-tree-2b6cb0)](Docs/Directory)
+[![Dataset availability and access](https://img.shields.io/badge/Dataset-availability-2f855a)](#data-availability)
 
 AortaPlane **regresses the aortic annulus plane directly from 3D cardiac CT, compares it against a landmark-based pipeline, and flags unreliable predictions for expert review.**
 
